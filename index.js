@@ -8,7 +8,6 @@ const transactionRoutes = require('./routes/Transaction');
 const database = require("./config/database");
 const { storeEthereumPrice } = require("./controllers/Price")
 
-const cors = require("cors");
 
 const dotenv = require("dotenv");
 

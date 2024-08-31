@@ -28,6 +28,8 @@ const getTotalExpense = async (req, res) => {
         const totalExpense = expenses(transactions);
         const latestPrice = await Price.findOne().sort({ timestamp: -1 });
 
+        console.log("total expenses are", totalExpense);
+
         res.status(200).json({
             totalExpense,
             currentEthereumPrice: latestPrice.price
