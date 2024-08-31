@@ -28,6 +28,9 @@ cron.schedule('*/10 * * * *', () => {
     storeEthereumPrice();
 });
 
+app.get('/', (req, res) => {
+	res.send('Welcome to the Crypto Transactions API');
+});
 
 app.listen(PORT, () => {
 	console.log(`App is running at ${PORT}`)

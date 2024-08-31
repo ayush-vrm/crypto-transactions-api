@@ -19,7 +19,7 @@ const transactionSchema = new mongoose.Schema({
     gasUsed: String,
     confirmations: String,
     isError: String,
-    address: String, // Address of the user
+    address: String, 
 });
 
 module.exports = mongoose.model('Transaction', transactionSchema);
